@@ -1,0 +1,46 @@
+@(title: String, jsAppRoute: String)(content: Html)
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>@title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="@routes.Assets.at("stylesheets/font-awesome.min.css")">
+        <link rel="stylesheet" href="@routes.Assets.at("stylesheets/main.css")">
+    </head>
+
+    <body>
+        <div id="main">
+            <div class="navbar navbar-inverse navbar-fixed-top color-nav">
+                    <div class="container">
+                        <a class="brand" href="/">@title</a>
+                        <div class="nav-collapse collapse">
+                            <ul class="nav">
+                                <li><a href="/">Base</a></li>
+                                <li><a href="/akka">Akka</a></li>
+                            </ul>
+                        </div>
+                </div>
+
+
+
+            </div>
+
+            <div id="content">
+            @content
+            </div>
+            <div id="push"></div>
+        </div>
+
+        @views.html.footer.render()
+
+        <script type="text/javascript" src="@routes.Assets.at("javascripts/jquery.js")"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.js"></script>
+        <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.5.0.js"></script>
+        <script type="text/javascript" src="@routes.Application.javascriptRoutes"></script>
+        <script type="text/javascript" src="@routes.Assets.at("javascripts/"+jsAppRoute+".js")")"></script>
+
+
+    </body>
+</html>

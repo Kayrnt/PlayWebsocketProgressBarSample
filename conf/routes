@@ -1,0 +1,18 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET        /                                                 controllers.Application.index
+GET        /akka                                             controllers.Application.indexAkka
+GET        /progress                                         controllers.Progress.process
+GET        /progressAkka                                     controllers.ProgressAkka.process
+GET        /clear                                            controllers.Application.clearSession
+
+# Javascript routing
+GET        /assets/javascripts/routes                        controllers.Application.javascriptRoutes()
+
+# Map static resources from the /public folder to the /public path
+GET        /assets/img/glyphicons-halflings-white.png        controllers.Assets.at(path="/public", file="/images/glyphicons-halflings-white.png")
+GET        /assets/img/glyphicons-halflings.png              controllers.Assets.at(path="/public", file="/images/glyphicons-halflings.png")
+GET        /assets/*file                                     controllers.Assets.at(path="/public", file)

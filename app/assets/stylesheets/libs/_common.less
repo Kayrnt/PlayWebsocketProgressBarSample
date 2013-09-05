@@ -1,0 +1,139 @@
+// -----------------------------------
+// MAIN
+// -----------------------------------
+// author: mda@zenexity.com - 2011
+// -----------------------------------
+// --------------------------- IMPORTS
+@import '_mate.less';
+@import '_theme.less';
+
+// ----------------------- MAIN STYLES
+
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+body {
+  background: @mainBackground;
+  color: @mainColor;
+  //  font: @defaultFont;
+  -webkit-font-smoothing: antialised;
+}
+
+a {
+  color: @links;
+  text-decoration: none;
+  &:hover {
+    color: @linksHover;
+  }
+}
+
+h3 {
+  text-align: center;
+}
+
+ol, ul, li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  list-style: none;
+}
+
+#main {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by it's height */
+  margin: 0px auto -60px;
+}
+
+#content > .container {
+  padding-top: 60px;
+}
+
+/* Set the fixed height of the footer here */
+#push,
+#footer {
+  height: 120px;
+}
+
+#footer {
+  -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+  padding-right: 0;
+  padding-left: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  background-color: #fafafa;
+  background-image: -moz-linear-gradient(top, #fff, #f2f2f2);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#f2f2f2));
+  background-image: -webkit-linear-gradient(top, #fff, #f2f2f2);
+  background-image: -o-linear-gradient(top, #fff, #f2f2f2);
+  background-image: linear-gradient(to bottom, #fff, #f2f2f2);
+  background-repeat: repeat-x;
+  border: 1px solid #d4d4d4;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0);
+
+  min-height: 100px;
+  padding: 10px 0 0;
+  font-weight: bold;
+}
+
+.navbar .nav {
+  text-align: center;
+  margin: 0 auto;
+  float: none;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Lastly, apply responsive CSS fixes as necessary */
+@media (max-width: 767px) {
+  #footer {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.nav-margin-bot {
+  margin-bottom: -10px !important;
+  text-align: center;
+}
+
+@media screen and (min-width: 640px) {
+  .how-header {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .how-header {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .how-header {
+    font-size: 10px;
+  }
+}
+
+
+
+
+
+

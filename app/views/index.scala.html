@@ -1,0 +1,11 @@
+@(title: String, jsAppRoute: String)
+@maintemplate(title, jsAppRoute) {
+
+    <div id="main" class="container" data-ng-app="progressApp">
+            <div ng-controller="ProgressController" class="well pagination-centered text-center">
+                <progress percent="dynamicObject" class="progress-striped active">
+                </progress>
+                <p class="progressState">{{dynamicObject.text}}</p>
+            </div>
+    </div>
+}
