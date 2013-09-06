@@ -15,6 +15,14 @@ Using it
 * Run this application with it ('play run' in the root directory) 
 * Go to [http://localhost:9000/](http://localhost:9000/)
 
+Libraries used
+--------
+[Play Framework] (http://www.playframework.com/)
+[Akka] (http://akka.io/)
+[AngularJS] (http://angularjs.org/)
+[Bootstrap] (http://getbootstrap.com/)
+[JQuery] (http://jquery.com/)
+
 Contact Me
 --------
 
