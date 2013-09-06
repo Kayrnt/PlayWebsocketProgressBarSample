@@ -4,7 +4,10 @@ Play Websocket Progress Bar Sample
 A sample of use of WebSocket with Play Framework 2 using Scala to make a progress bar. The sample also makes use of AngularJS and Akka. 
 
 Base example shows the simple way without Akka.
+
 Akka example shows a bit more advanced example that show a process started in the background and progression isn't "destroyed" when you refresh the page thanks to Akka actors.
+Pressing "reset" will clear the session and reset the processing for your client. You can refresh the page but this demo only handles one "client" at the same time.
+Opening 2 tabs in progress will "break" the progress bar for the first client. It isn't hard to "fix" but it would add unnecessary complexity to the project.
 
 It might be a bit hacky so if you want to clean it up, you can send pull requests.
 
@@ -17,17 +20,17 @@ Using it
 
 Libraries used
 --------
-[Play Framework] (http://www.playframework.com/)
-[Akka] (http://akka.io/)
-[AngularJS] (http://angularjs.org/)
-[Bootstrap] (http://getbootstrap.com/)
-[JQuery] (http://jquery.com/)
+*[Play Framework] (http://www.playframework.com/)
+*[Akka] (http://akka.io/)
+*[AngularJS] (http://angularjs.org/)
+*[Bootstrap] (http://getbootstrap.com/)
+*[JQuery] (http://jquery.com/)
 
 Contact Me
 --------
 
-[@Kayrnt](https://twitter.com/Kayrnt)
-[Porfolio](http://www.kayrnt.fr)
+*[@Kayrnt](https://twitter.com/Kayrnt)
+*[Porfolio](http://www.kayrnt.fr)
 
 Licence
 -------
